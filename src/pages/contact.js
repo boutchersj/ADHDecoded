@@ -1,16 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Head from '../components/Head'
+import contactStyles from './contact.module.scss'
 
 const ContactPage = () => {
+    
     return (
         <Layout>
             <Head title="Contact" />
             <h2>Contact</h2>
-            <div>Email: <a href='mailto:boutchersj@gmail.com'>boutchersj@gmail.com</a></div>
-            <div>Twitter: <a href='https://twitter.com/boutchersj'>@boutchersj</a></div>
-            <Link to='/'>Back Home</Link>
+            <div className={contactStyles.buttons}>
+                <a href='mailto:boutchersj@gmail.com'>Email</a>
+                <a target='_blank' href='https://twitter.com/boutchersj'>Twitter</a>
+                <a target='_blank' href='https://linkedin.com/in/boutchersj'>LinkedIn</a>
+            </div>
         </Layout>
     )
 }

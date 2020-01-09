@@ -1,0 +1,16 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 200px;
+    a {
+        background-color: #F4F4F4;
+        padding: 1em;
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        background-color: #E4E4E4;
+    }
+}
