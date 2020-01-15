@@ -1,23 +1,15 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import headerStyles from './header.module.scss'
+import brandLogo from './brandLogo.jpg'
 
 const Header = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `)
 
     return (
         <header className={headerStyles.header}>
             <h1>
-                <Link className={headerStyles.title} to='/'>
-                    {data.site.siteMetadata.title}
+                <Link to='/'>
+                    <img src={brandLogo} alt='ADHDecoded brand logo' />
                 </Link>
             </h1>
             <nav>
