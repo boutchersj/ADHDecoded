@@ -30,7 +30,8 @@
 }
 
 img {
+    display: inline-block;
+    object-fit: cover;
     width: 100%;
-    display: block;
-    height: auto;
+    height: 200px;
 }
